@@ -1,0 +1,114 @@
+footer{
+	display:flex;
+	justify-content:space-between;
+	background-color:gray;
+	color:white;
+	font-family:arial;
+}
+.footer_left{
+	padding:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    width:40%;
+}
+.footer_left_top{
+    display:flex;flex-direction: row;
+}
+.footer_left_top_logo{
+    padding: 0px 35px 0px 0px;
+
+}
+.footer_left_top_logo>img{
+    width:40px;height:40px;
+}
+.footer_left_top_logo>p{
+    margin:0px;
+}
+.footer_left_top_logo_text{
+    display:inline-block; font-size:2em;font-weight:bold;
+}
+.footer_left_top_faq{
+    display:flex;
+    flex-direction:column;
+    padding: 0px 35px 0px 0px;
+}
+
+.footer_left_top_faq>div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.footer_left_top_faq div>img{
+    width:15px;height:15px;
+}
+.footer_left_top_faq div>p{
+    margin:0px;display:inline-block;
+}
+.footer_left_bot{
+    margin-top:0px;display: flex;flex-direction: row;
+}
+.footer_left_bot>img{
+    width:40px;height:40px;
+}
+
+.footer_right_top{
+    display:flex;flex-direction:column;justify-content: space-around;padding:25px;width:40%;
+}
+.footer_right_top_1{
+    display:flex;flex-direction:row;align-items: center;justify-content: space-around;
+}
+.footer_right_top_1 div>img{
+    width:15px;height:15px;
+}
+.footer_right_top_1_label{
+    display: flex;flex-direction: row;align-items: center;
+}
+.footer_right_top_2{
+    display:flex;flex-direction:row;justify-content: space-around;
+}
+.footer_right_top_2>div{
+    display:flex;flex-direction:row;align-items: center;padding: 5px 4% 5px 4%;border: solid 1px white;border-radius: 10px;background-color: white;
+}
+.footer_right_top_2 div>img{
+    height: 50px;width: 50px;
+}
+.footer_right_top_2 div>div{
+    color: black;text-align: left;margin: 0px 10px 0px 10px;
+}
+.footer_right_top_2_small_text{
+    margin:0px;font-size: 0.6em;
+}
+.footer_right_top_2_main_text{
+    margin: 0px;
+}
+.footer_right_top_3{
+    display:flex;flex-direction:row;justify-content:space-evenly;
+}
+
+@media(max-width: 1000px){
+    footer{
+        flex-direction: column;
+    }
+    .footer_left{
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .footer_right_top{
+        width: 100%;
+    }
+    .footer_right_top_1{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer_right_top_2{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer_right_top_3{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
