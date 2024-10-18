@@ -7,11 +7,14 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .links-container>p{
 	margin:0px;
-	padding:min(1%,5px);
+	padding-left:max(3%,15px);
+    padding-right:max(3%,15px);
+    padding-top: min(1%,5px);
+    padding-top: min(1%,5px);
 }
 #sidebar-active{
     display: none;
@@ -20,6 +23,8 @@ header {
     display: none;
 }
 nav.flex{
+    padding-left: max(5%,25px);
+    padding-right: max(5%,25px);
     padding-top: 25px;
     padding-bottom: 25px;
     display: flex;
@@ -38,6 +43,12 @@ nav.flex{
 }
 .open-sidebar-button{
 	padding: 10px;
+}
+.navigation_head{
+    font-size: 3em;border-bottom: solid black; margin-top: 0px;margin-bottom: 0px;
+}
+.navigation_head_sub{
+    margin-top: 0px;margin-bottom: 0px;
 }
 nav.flex img{
     width: 2em;
