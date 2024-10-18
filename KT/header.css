@@ -1,3 +1,6 @@
+header {
+	width:100%
+}
 .links-container{
     height: 100%;
     width: 100%;
@@ -5,6 +8,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+.links-container>p{
+	margin:0px;
+	padding:min(1%,5px);
 }
 #sidebar-active{
     display: none;
@@ -22,18 +29,15 @@ nav.flex{
     
 }
 .icons_group{
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+	
 }
-nav.flex p{
-    display: inline-block;
-    text-align: center;
-    
+.icons_group>img{
+	padding: 10px;
 }
-nav.flex div p{
-    font-size:1em;
-    padding-left: max(15px,3%);
-    padding-right: max(15px,3%);
+.open-sidebar-button{
+	padding: 10px;
 }
 nav.flex img{
     width: 2em;
@@ -42,6 +46,7 @@ nav.flex img{
 div.logo{
     display: flex;
     flex-direction: column;
+	align-items:center;
 }
 nav div div img{
     padding-left:5px;
@@ -49,14 +54,16 @@ nav div div img{
 }
 @media(max-width: 1100px){
     nav.flex{
-        justify-content: flex-start;
-    }
-    nav.flex img{
-        position: fixed;
+		width:100%;
+        justify-content: space-between;
+		position: fixed;
+		background-color: rgba(128, 128, 128, 0.685);
     }
     .links-container{
+	padding-top:25px;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+	  justify-content:flex-start;
   
       position: fixed;
       top: 0;
@@ -64,13 +71,27 @@ nav div div img{
       z-index: 10;
       width: 300px;
   
-      background-color: gray;
+      background-color: rgba(128, 128, 128, 1);
       box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
       transition: 0.45s ease-out;
     }
-    .open-sidebar-button, .close-sidebar-button{
+	.links-container>p{
+		padding-top:max(25px,1%);
+		padding-bottom:max(25px,1%);
+	}
+	div.logo{
+		width:100%;
+		display: flex;
+		align-items:center;
+	}
+	
+	.icons_group{
+		padding-right:5%;
+	}
+	.close-sidebar-button{
       padding: 10px;
       display: block;
+	  align-self: flex-end;
     }
     #sidebar-active:checked ~ .links-container{
       left: 0;
