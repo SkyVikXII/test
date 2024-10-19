@@ -1,4 +1,6 @@
 footer{
+	padding-left:8%;
+	padding-right:8%;
 	display:flex;
 	justify-content:space-between;
 	background-color:gray;
@@ -96,6 +98,7 @@ footer{
 		width:100%;
         flex-direction: column;
 		align-items:center;
+		padding:0px
     }
     .footer_left{
         align-items: center;
